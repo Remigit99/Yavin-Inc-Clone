@@ -96,7 +96,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 
 h5 {
@@ -168,6 +168,17 @@ nav {
 
 .arrow-down {
     width: 0.65rem;
+}
+
+.open__menu,
+.close__menu {
+    display: none;
+    cursor: pointer;
+}
+
+.open__menu i,
+.close__menu i {
+    font-size: 1.5rem;
 }
 
 /*============== Header =============*/
@@ -271,15 +282,15 @@ nav {
     margin: 1rem 0 1.5rem;
 }
 
-.space__list li::before {
-    content: '';
-    background-color: red;
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    position: absolute;
-    margin-right: 1rem;
-    left: -1%;
+.space__list span,
+.services__left-list span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.space__list li {
+    margin: 0.5rem 0;
 }
 
 /*============== Services =============*/
@@ -423,6 +434,10 @@ nav {
     border: 5px solid var(--clr-pink);
 }
 
+.avatar__content {
+    margin-top: 1.5rem;
+}
+
 /*============== Contact =============*/
 #contact {
     position: relative;
@@ -430,7 +445,7 @@ nav {
 
 .contact__container {
     display: grid;
-    grid-template-columns: 38% 55%;
+    grid-template-columns: 1fr 1.2fr;
     gap: 7%;
     place-items: center;
 }
@@ -540,6 +555,14 @@ footer {
         display: none;
     }
 
+    .open__menu {
+        display: block;
+    }
+
+    .close__menu {
+        display: none;
+    }
+
 
     /*============== Header =============*/
     #header {
@@ -617,7 +640,7 @@ footer {
 
     /*============== Clients =============*/
     .client__container {
-        padding: 10rem 0 1rem;
+        padding: 12rem 0 1rem;
         grid-template-columns: 1fr;
         gap: 2rem;
     }
