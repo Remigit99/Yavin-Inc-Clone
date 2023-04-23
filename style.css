@@ -566,7 +566,6 @@ footer {
         right: -9rem;
         top: 8rem;
         z-index: -1;
-
     }
 
 
@@ -599,4 +598,112 @@ footer {
     .container {
         width: var(--container-width-sm);
     }
+
+
+    /*============== Header =============*/
+    #header {
+        height: 70vh;
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 5rem 0 2rem;
+    }
+
+    .decoration-star2 {
+        display: none;
+    }
+
+    /*============== Clients =============*/
+    .client__container {
+        padding: 10rem 0 1rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /*============== Create =============*/
+    .create__container {
+        width: 100%;
+    }
+
+    .create__container h3 {
+        margin-bottom: 1.5rem;
+    }
+
+    /*============== Office space =============*/
+    #space {
+        position: relative;
+    }
+
+    .space__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+
+    /*============== Services =============*/
+    .services__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 7%;
+    }
+
+    /*============== Organized =============*/
+
+    .organized__container {
+        grid-template-columns: 1fr;
+        gap: 6%;
+    }
+
+    /*============== Projects =============*/
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    /*============== Testimonials =============*/
+    #testimonials {
+        background-color: var(--clr-blue-variant);
+        position: relative;
+        padding: 10rem 0 4rem;
+
+    }
+
+    .testimonial__container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .quote {
+        width: 6rem;
+    }
+
+    /*============== Contact =============*/
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 7%;
+    }
+
+
+    /*============== Footer =============*/
+
+    footer {
+        background-color: var(--clr-blue-variant);
+        padding: 4rem 0 1rem;
+    }
+
+    .footer__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    .footer__logo {
+        width: 8rem;
+    }
+
+
+
+
 }
