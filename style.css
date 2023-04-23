@@ -443,10 +443,15 @@ nav {
     position: relative;
 }
 
+#contact h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
 .contact__container {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 7%;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
     place-items: center;
 }
 
@@ -499,16 +504,15 @@ footer {
 }
 
 
-
-/*============== Return to Home =============*/
+/*============== Return Home =============*/
 .to-top {
     background-color: var(--clr-black);
     position: fixed;
     bottom: 5rem;
-    right: 5%;
     border-radius: 50%;
     padding: 0.5rem;
-    box-shadow: .1rem .1rem 2rem hsl(0, 0%, 0%);
+    right: 9%;
+    box-shadow: .1rem .1rem 2rem rgb(53, 53, 53);
     transition: var(--transition);
 }
 
@@ -550,7 +554,7 @@ footer {
         width: var(--container-width-md);
     }
 
-    /*======== Navbar =======*/
+    /*=====*=== Navbar ====*===*/
     .nav__links {
         display: none;
     }
@@ -564,7 +568,7 @@ footer {
     }
 
 
-    /*============== Header =============*/
+    /*========*====== Header =====*=======*/
     #header {
         height: 45vh;
     }
@@ -575,24 +579,7 @@ footer {
         padding: 7rem 0 3rem;
     }
 
-    .decoration-stars {
-        width: 28rem;
-        position: absolute;
-        left: -12rem;
-        top: 8rem;
-        z-index: -1;
-    }
-
-    .decoration-star2 {
-        width: 28rem;
-        position: absolute;
-        right: -9rem;
-        top: 8rem;
-        z-index: -1;
-    }
-
-
-    /*============== Office space =============*/
+    /*======*======= Office space =====*======*/
     .space__container {
         grid-template-columns: 1fr 1.2fr;
         gap: 5rem;
@@ -603,18 +590,35 @@ footer {
         top: 5rem;
     }
 
-    /*============== Services =============*/
+    /*=======*===== Services ========*====*/
     .services__container {
         grid-template-columns: 43% 50%;
         gap: 7%;
     }
 
-    /*============== Projects =============*/
+    /*======*======== Projects =======*=====*/
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
 
+
+    /*========*==== Contact =======*====*/
+    .contact__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+        place-items: center;
+    }
+
+    .contact__img {
+        display: none;
+    }
+
 }
+
+
+
+/*============== MEDIA QUERY (Small Devices) =============*/
 
 @media screen and (max-width: 34em) {
 
@@ -623,7 +627,7 @@ footer {
     }
 
 
-    /*============== Header =============*/
+    /*======**====== Header =====**======*/
     #header {
         height: 70vh;
     }
@@ -638,14 +642,14 @@ footer {
         display: none;
     }
 
-    /*============== Clients =============*/
+    /*=====**======= Clients =======**====*/
     .client__container {
         padding: 12rem 0 1rem;
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    /*============== Create =============*/
+    /*======**====== Create =======**====*/
     .create__container {
         width: 100%;
     }
@@ -654,7 +658,7 @@ footer {
         margin-bottom: 1.5rem;
     }
 
-    /*============== Office space =============*/
+    /*=======**===== Office space ======**====*/
     #space {
         position: relative;
     }
@@ -665,27 +669,27 @@ footer {
     }
 
 
-    /*============== Services =============*/
+    /*======**====== Services ======**=====*/
     .services__container {
         display: grid;
         grid-template-columns: 1fr;
         gap: 7%;
     }
 
-    /*============== Organized =============*/
+    /*========**==== Organized ====**=======*/
 
     .organized__container {
         grid-template-columns: 1fr;
         gap: 6%;
     }
 
-    /*============== Projects =============*/
+    /*======**====== Projects ======**=====*/
     .projects {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
 
-    /*============== Testimonials =============*/
+    /*=======**===== Testimonials =====**======*/
     #testimonials {
         background-color: var(--clr-blue-variant);
         position: relative;
@@ -702,14 +706,17 @@ footer {
         width: 6rem;
     }
 
-    /*============== Contact =============*/
+    /*======**====== Contact ====**=======*/
     .contact__container {
         grid-template-columns: 1fr;
-        gap: 7%;
+        gap: 0;
     }
 
+    .contact__img {
+        display: none;
+    }
 
-    /*============== Footer =============*/
+    /*======**====== Footer =====**======*/
 
     footer {
         background-color: var(--clr-blue-variant);
@@ -726,7 +733,15 @@ footer {
         width: 8rem;
     }
 
+    /*=======**==== Return to Home =====**====*/
+    .to-top {
+        background-color: rgb(53, 53, 53);
+        right: 9%;
+        box-shadow: .1rem .1rem 2rem rgb(53, 53, 53);
+    }
 
-
+    .to-top img {
+        width: 1.3rem;
+    }
 
 }
